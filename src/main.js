@@ -15,9 +15,9 @@ function getDateFormat() {
 	return [year, month, day].join('-'); // Remplazamos los espacios o comas por guiones 
 }
 
-const gdates = getDateFormat()  // Llamamo s al funcion para guardarla en gdates ..
-console.log(gdates) // imprimimos el resultado obtenido en gdates
+const gdates = getDateFormat()  // Llamamos a la funcion para guardarla en uan variable llamada (gdates) ..
+console.log(gdates) // imprimimos la variable (gdates)
 
-// Tambien podemos insertar en html
+// Insertamos en nuestro html
 document.getElementById("setdate").innerHTML = gdates; 
 
