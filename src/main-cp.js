@@ -1,3 +1,12 @@
+function getdate() {
+	let f = new Date();
+	let dateToDoc = getDateFormat(f)
+	document.getElementById("setdate").innerHTML = dateToDoc;
+}
+
+getdate()
+
+
 function getDateFormat() {
 	let f = new Date();
 	var d = new Date(f),
@@ -12,8 +21,4 @@ function getDateFormat() {
 	return [year, month, day].join('-');
 }
 
-const gdates = getDateFormat()
-console.log(gdates)
-
-document.getElementById("setdate").innerHTML = gdates;
 
